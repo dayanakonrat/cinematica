@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Cinematica — частные кинозалы в Алматы, ул. Сулейменова, 24А. Залы на двоих и для компании до 7 человек, романтические пакеты, бронь в WhatsApp.">
+<meta name="description" content="Cinematica — частные кинозалы в Алматы, ул. Сулейменова, 24А. Залы для двоих и компании, романтические пакеты и сеты, бронь в WhatsApp.">
 <title>Cinematica Алматы</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -236,6 +236,16 @@ footer { border-top: 1px solid var(--line); padding-block: 40px 100px; font-size
 .swap { margin-top: 16px; color: var(--muted); font-size: 14px; text-align: center; }
 @media (max-width: 420px) { .wordmark { height: 11px; } .top .wrap { gap: 10px; } }
 
+/* Переключатель языка */
+.lang { display: flex; gap: 2px; margin-left: auto; padding: 3px; border: 1px solid var(--line); border-radius: 999px; font: 600 12px var(--f-body); }
+.lang a { padding: 5px 9px; border-radius: 999px; text-decoration: none; color: var(--muted); }
+.lang a:hover { color: var(--fg); }
+.lang[data-cur="ru"] [data-l="ru"], .lang[data-cur="kz"] [data-l="kz"], .lang[data-cur="en"] [data-l="en"] { background: var(--grad); color: #fff; }
+.top nav + .lang { margin-left: 0; }
+@media (max-width: 420px) { .lang a { padding: 5px 7px; } .lang + .btn-sm { padding-inline: 12px; } }
+.top .btn-sm { white-space: nowrap; }
+@media (max-width: 480px) { .top .wordmark { display: none; } }
+
 
 </style>
 <style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
@@ -248,6 +258,7 @@ footer { border-top: 1px solid var(--line); padding-block: 40px 100px; font-size
 <header class="top"><div class="wrap">
   <a class="logo" href="#top"><img src="img/logo-cinematica.png" alt="" class="logo-img"><img class="wordmark" src="img/wordmark-cinematica.png" alt="Cinematica"></a>
   <nav><a href="#halls">Залы</a><a href="#romantic">Свидание</a><a href="#sets">Сеты</a><a href="#gallery">Фото</a><a href="#book">Бронь</a><a href="#faq">Вопросы</a><a href="#contacts">Контакты</a></nav>
+  <div class="lang" data-cur="ru"><a href="index.html" data-l="ru">RU</a><a href="kz.html" data-l="kz">KZ</a><a href="en.html" data-l="en">EN</a></div>
   <a class="btn btn-sm" href="#book">Забронировать</a>
 </div></header>
 
@@ -256,10 +267,10 @@ footer { border-top: 1px solid var(--line); padding-block: 40px 100px; font-size
     <div class="hero-text">
       <img class="hero-wordmark" src="img/wordmark-cinematica.png" alt="Cinematica">
       <span class="pill"><svg class="ic sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-6.5-6-6.5-11a6.5 6.5 0 0113 0c0 5-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg>Частный кинозал · Алматы</span>
-      <h1>Вечер, который<br>захочется<br><span class="grad">пересматривать</span></h1>
-      <p class="lead">Четыре приватных кинозала в Алматы. Мы заранее зажжём свечи и разложим лепестки, а фильм выбираете вы. Для свидания, дня рождения или вечера с друзьями до 7 человек.</p>
+      <h1>Свой кинозал<br><span class="grad">на вечер</span></h1>
+      <p class="lead">Без чужих людей, рекламы и спешки. Только вы, кино и атмосфера, которую мы создадим заранее.</p>
       <div class="cta"><a class="btn" href="#book">Забронировать в WhatsApp <svg class="ic sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn btn-ghost" href="#halls">Смотреть залы</a></div>
-      <div class="stats"><div><b>4</b><span>зала</span></div><div><b>2–7</b><span>гостей</span></div><div><b>от 10 000 ₸</b><span>пакет на двоих</span></div></div>
+      <div class="stats"><div><b>4</b><span>зала</span></div><div><b>Для двоих</b><span>и компании</span></div><div><b>от 10 000 ₸</b><span>пакет на двоих</span></div></div>
     </div>
     <div class="hero-visual">
       <div class="hero-frame glass"><img src="img/c-romantic.jpg" alt="Зал Cinematica с сердцем из лепестков и свечами"></div>
@@ -515,6 +526,8 @@ document.querySelectorAll("[data-pack]").forEach(a => a.addEventListener("click"
 const t = new Date(); t.setDate(t.getDate() + 1);
 $("date").value = t.toISOString().slice(0, 10);
 update();
+document.querySelectorAll(".lang a").forEach(a => a.addEventListener("click", () => { try { sessionStorage.setItem("y", scrollY); } catch (e) {} }));
+try { const y = sessionStorage.getItem("y"); if (y !== null) { sessionStorage.removeItem("y"); scrollTo(0, +y); } } catch (e) {}
 </script>
 
 </body>
