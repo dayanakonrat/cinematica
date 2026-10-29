@@ -213,7 +213,7 @@ footer { border-top: 1px solid var(--line); padding-block: 40px 100px; font-size
 .hero-wordmark { width: min(100%, 440px); height: auto; display: block; filter: drop-shadow(0 0 24px color-mix(in srgb, var(--a2) 45%, transparent)); }
 
 /* Сеты */
-.sets { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.sets { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; }
 @media (max-width: 1000px) { .sets { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 600px) { .sets { grid-template-columns: 1fr; } }
 .set { border-radius: 20px; padding: 22px; display: flex; flex-direction: column; gap: 10px; }
@@ -361,46 +361,32 @@ details summary { line-height: 1.4; }
     <div class="sec-head"><span class="pill">Sets</span><h2>Movies and <span class="grad">all the extras</span></h2><p>Room time, snacks and drinks for one price.</p></div>
     <div class="sets">
       <article class="set glass">
-        <div class="set-top"><span class="set-num">01</span><span class="price">6 000 ₸</span></div>
+        <div class="set-top"><span class="set-num">01</span><span class="price">6 990 ₸</span></div>
         <h3>Easy</h3>
         <p class="set-hours">2 hours of private cinema</p>
         <ul class="set-items"><li>Popcorn</li><li>2 drinks of your choice</li></ul>
         <a class="btn btn-sm btn-ghost" href="#book" data-pack="Easy">Choose set</a>
       </article>
       <article class="set glass">
-        <div class="set-top"><span class="set-num">02</span><span class="price">10 000 ₸</span></div>
+        <div class="set-top"><span class="set-num">02</span><span class="price">9 990 ₸</span></div>
         <h3>Chill</h3>
         <p class="set-hours">3 hours of private cinema</p>
         <ul class="set-items"><li>Lay&#x27;s chips</li><li>1 fresh juice of your choice</li></ul>
         <a class="btn btn-sm btn-ghost" href="#book" data-pack="Chill">Choose set</a>
       </article>
       <article class="set glass">
-        <div class="set-top"><span class="set-num">03</span><span class="price">16 000 ₸</span></div>
+        <div class="set-top"><span class="set-num">03</span><span class="price">14 990 ₸</span></div>
         <h3>Long Night</h3>
         <p class="set-hours">5 hours of private cinema</p>
         <ul class="set-items"><li>Popcorn</li><li>1 fresh juice of your choice</li></ul>
         <a class="btn btn-sm btn-ghost" href="#book" data-pack="Long Night">Choose set</a>
       </article>
       <article class="set glass">
-        <div class="set-top"><span class="set-num">04</span><span class="price">18 000 ₸</span></div>
+        <div class="set-top"><span class="set-num">04</span><span class="price">17 990 ₸</span></div>
         <h3>Smoke &amp; Chill</h3>
         <p class="set-hours">3 hours of private cinema</p>
         <ul class="set-items"><li>Hookah</li><li>Popcorn</li><li>2 drinks of your choice</li><li>Tea with sweets</li></ul>
         <a class="btn btn-sm btn-ghost" href="#book" data-pack="Smoke &amp; Chill">Choose set</a>
-      </article>
-      <article class="set glass">
-        <div class="set-top"><span class="set-num">05</span><span class="price">25 000 ₸</span></div>
-        <h3>All Day</h3>
-        <p class="set-hours">8 hours of private cinema</p>
-        <ul class="set-items"><li>Lay&#x27;s chips</li><li>2 drinks of your choice</li><li>Tea with sweets</li></ul>
-        <a class="btn btn-sm btn-ghost" href="#book" data-pack="All Day">Choose set</a>
-      </article>
-      <article class="set glass">
-        <div class="set-top"><span class="set-num">06</span><span class="price">35 000 ₸</span></div>
-        <h3>Private Night</h3>
-        <p class="set-hours">8 hours of private cinema</p>
-        <ul class="set-items"><li>Hookah</li><li>Popcorn</li><li>2 energy drinks</li><li>Tea with sweets</li><li>Wine or champagne of your choice</li></ul>
-        <a class="btn btn-sm btn-ghost" href="#book" data-pack="Private Night">Choose set</a>
       </article>
     </div>
     <div class="perks">
@@ -444,7 +430,7 @@ details summary { line-height: 1.4; }
           <label for="room">Room<select id="room"></select></label>
           <label for="guests">Guests<input id="guests" type="number" min="1" max="7" value="2"></label>
         </div>
-        <label for="pack">Package or set<select id="pack"><option value="">No package or set, standard rental</option><optgroup label="Romantic packages"><option value="Romantic Base">Romantic Base · 2 h · 10 000 ₸</option><option value="Romantic Classic">Romantic Classic · 3 h · 20 000 ₸</option><option value="Romantic Premium">Romantic Premium · 4 h · 25 000 ₸</option></optgroup><optgroup label="Sets"><option value="Easy">Easy · 2 h · 6 000 ₸</option><option value="Chill">Chill · 3 h · 10 000 ₸</option><option value="Long Night">Long Night · 5 h · 16 000 ₸</option><option value="Smoke & Chill">Smoke & Chill · 3 h · 18 000 ₸</option><option value="All Day">All Day · 8 h · 25 000 ₸</option><option value="Private Night">Private Night · 8 h · 35 000 ₸</option><option value="Before Six">Before Six · 2 h · 4 500 ₸</option></optgroup></select></label>
+        <label for="pack">Package or set<select id="pack"><option value="">No package or set, standard rental</option><optgroup label="Romantic packages"><option value="Romantic Base">Romantic Base · 2 h · 10 000 ₸</option><option value="Romantic Classic">Romantic Classic · 3 h · 20 000 ₸</option><option value="Romantic Premium">Romantic Premium · 4 h · 25 000 ₸</option></optgroup><optgroup label="Sets"><option value="Easy">Easy · 2 h · 6 990 ₸</option><option value="Chill">Chill · 3 h · 9 990 ₸</option><option value="Long Night">Long Night · 5 h · 14 990 ₸</option><option value="Smoke & Chill">Smoke & Chill · 3 h · 17 990 ₸</option><option value="Before Six">Before Six · 2 h · 4 500 ₸</option></optgroup></select></label>
         <div class="row3">
           <label for="date">Date<input id="date" type="date"></label>
           <label for="time">Start<input id="time" type="time" value="20:00" step="1800"></label>
@@ -515,7 +501,7 @@ details summary { line-height: 1.4; }
 <a class="btn fab" href="#book"><svg class="ic sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 11.5a8.5 8.5 0 01-12.4 7.6L3.5 20.5l1.4-4.4A8.5 8.5 0 1120.5 11.5z"/></svg>WhatsApp</a>
 
 <script>
-const D = {"wa": "77080088808", "name": "Cinematica", "pp": 2500, "rooms": [["Room 1", 2500, 7], ["Room 2", 2500, 2], ["Room 3", 2500, 2], ["Room 4", 2500, 2]], "packs": {"Romantic Base": [10000, 2], "Romantic Classic": [20000, 3], "Romantic Premium": [25000, 4], "Easy": [6000, 2], "Chill": [10000, 3], "Long Night": [16000, 5], "Smoke & Chill": [18000, 3], "All Day": [25000, 8], "Private Night": [35000, 8], "Before Six": [4500, 2]}};
+const D = {"wa": "77080088808", "name": "Cinematica", "pp": 2500, "rooms": [["Room 1", 2500, 7], ["Room 2", 2500, 2], ["Room 3", 2500, 2], ["Room 4", 2500, 2]], "packs": {"Romantic Base": [10000, 2], "Romantic Classic": [20000, 3], "Romantic Premium": [25000, 4], "Easy": [6990, 2], "Chill": [9990, 3], "Long Night": [14990, 5], "Smoke & Chill": [17990, 3], "Before Six": [4500, 2]}};
 const $ = id => document.getElementById(id);
 const fmt = n => n.toLocaleString("ru-RU").replace(/\u00a0/g, " ") + " ₸";
 $("room").innerHTML = D.rooms.map(([n, p, c]) => `<option value="${n}">${n}</option>`).join("");
