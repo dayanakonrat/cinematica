@@ -247,6 +247,10 @@ footer { border-top: 1px solid var(--line); padding-block: 40px 100px; font-size
 @media (max-width: 480px) { .top .wordmark { display: none; } }
 .cta.center { justify-content: center; }
 .tg-btn { justify-self: start; margin-top: 4px; }
+.branch-img { display: block; border-radius: 20px; overflow: hidden; border: 1px solid var(--line); }
+.branch-img img { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; transition: transform .4s; }
+.branch-img:hover img { transform: scale(1.04); }
+details summary { line-height: 1.4; }
 
 
 </style>
@@ -271,7 +275,7 @@ footer { border-top: 1px solid var(--line); padding-block: 40px 100px; font-size
       <span class="pill"><svg class="ic sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-6.5-6-6.5-11a6.5 6.5 0 0113 0c0 5-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg>Private cinema room · Almaty</span>
       <h1>Your own cinema<br><span class="grad">for the evening</span></h1>
       <p class="lead">No strangers, no ads, no rush. Just you, the film and an atmosphere we set up in advance.</p>
-      <div class="cta"><a class="btn" href="#book">Book on WhatsApp <svg class="ic sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn btn-ghost" href="#halls">See the rooms</a></div>
+      <div class="cta"><a class="btn" href="https://wa.me/77080088808?text=Hello%2C%20I%20would%20like%20to%20book%20a%20cinema%20room%20at%20Cinematica" target="_blank" rel="noopener">Book a cinema room <svg class="ic sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn btn-ghost" href="#halls">See the rooms</a></div>
       <div class="stats"><div><b>4</b><span>rooms</span></div><div><b>For two</b><span>or a group</span></div><div><b>from 4 500 ₸</b><span>package for two</span></div></div>
     </div>
     <div class="hero-visual">
@@ -433,7 +437,7 @@ footer { border-top: 1px solid var(--line); padding-block: 40px 100px; font-size
         <p>Choose a room and time. We will calculate the price and prepare a message for the administrator. Then just tap “Send”.</p>
         <p class="small">Or message us directly: <b>+7 708 008 88 08</b></p>
         <a class="btn btn-ghost tg-btn" href="https://t.me/cinematica_almaty_bot" target="_blank" rel="noopener"><svg class="ic sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 4L3 11.2l5.6 2.1L18 7.5l-7.2 7.3V20l3.3-3.5 4 2.9z"/></svg>Quick booking via Telegram bot</a>
-        <p class="small">Open from 14:00 until the last guest leaves. By arrangement we can open from 12:00.</p>
+        <p class="small">Open from 14:00 until the last guest leaves. Need it earlier? We will open for you.</p>
       </div>
       <form id="f" novalidate>
         <div class="row">
@@ -456,15 +460,15 @@ footer { border-top: 1px solid var(--line); padding-block: 40px 100px; font-size
 
   <section id="faq"><div class="wrap narrow">
     <div class="sec-head"><span class="pill">FAQ</span><h2>Frequently asked <span class="grad">questions</span></h2></div>
-    <details class="glass"><summary>Can we bring our own food and drinks?</summary><p>Yes, you can bring any food and drinks. Or order delivery straight to the room, with no extra fee.</p></details>
-    <details class="glass"><summary>What can we watch?</summary><p>Anything available online: ad-free films and series in good quality, with new releases right after they come out. You can also play a video from your own link.</p></details>
-    <details class="glass"><summary>Can we extend the session?</summary><p>Yes, each extra hour costs 1 250 ₸ per person.</p></details>
-    <details class="glass"><summary>Can we smoke hookah?</summary><p>Yes, we have hookahs, from 6 000 ₸.</p></details>
-    <details class="glass"><summary>Do you have PlayStation or karaoke?</summary><p>No, we are all about cinema: a big screen and great sound.</p></details>
-    <details class="glass"><summary>How can we pay?</summary><p>Cash, Kaspi transfer or Kaspi Red. The booking deposit is paid via Kaspi.</p></details>
-    <details class="glass"><summary>What are your opening hours?</summary><p>From 14:00 until the last booked guest. If needed, we can open earlier, from 12:00: just arrange it with the administrator in advance.</p></details>
-    <details class="glass"><summary>How do I cancel or reschedule?</summary><p>Free of charge with 24 hours’ notice. After that the deposit is non-refundable, but you can reschedule once.</p></details>
-    <details class="glass"><summary>Is there an age limit?</summary><p>Before 21:00 entry from age 16, after 21:00 only 18+.</p></details>
+    <details class="glass"><summary>🍿 Can we bring our own food and drinks?</summary><p>Of course! Bring whatever you love, or order delivery straight to the room. No extra charge for that 😉</p></details>
+    <details class="glass"><summary>🎬 What can we watch?</summary><p>Anything online: ad-free films and series in good quality, with new releases right after they come out. Want your own video? Just send us the link ✨</p></details>
+    <details class="glass"><summary>⏳ Can we extend the session?</summary><p>Yes, if you don't feel like leaving, stay 💛 Each extra hour costs 1 250 ₸ per person.</p></details>
+    <details class="glass"><summary>💨 Can we have a hookah?</summary><p>Yes, we will prepare a fragrant hookah for you, from 6 000 ₸.</p></details>
+    <details class="glass"><summary>🎮 Do you have PlayStation or karaoke?</summary><p>No, everything here is about cinema: a big screen, great sound and a cosy sofa 🎥</p></details>
+    <details class="glass"><summary>💳 How can we pay?</summary><p>Whatever suits you: cash, transfer to a Kaspi, Freedom or Halyk card, Kaspi QR or Kaspi Red. The booking deposit can be paid by Kaspi transfer.</p></details>
+    <details class="glass"><summary>🕑 How late are you open?</summary><p>We open at 14:00 and close when the last guest leaves. Need it earlier? We will open for you ☀️ Want to stay till morning? We will stay with you 🌙</p></details>
+    <details class="glass"><summary>🔒 Are there cameras in the rooms?</summary><p>No, there are no cameras in the rooms. The door is closed during the session, and no one will disturb you 🤫</p></details>
+    <details class="glass"><summary>🔞 Is there an age limit?</summary><p>Before 21:00 we welcome guests from age 16, after 21:00 only 18+.</p></details>
   </div></section>
 
   <section id="map"><div class="wrap">
@@ -472,7 +476,7 @@ footer { border-top: 1px solid var(--line); padding-block: 40px 100px; font-size
       <div class="map-text">
         <span class="pill"><svg class="ic sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-6.5-6-6.5-11a6.5 6.5 0 0113 0c0 5-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg>How to find us</span>
         <h2>24A Suleimenov St<br><span class="grad">Almaty</span></h2>
-        <p>Daily from 14:00 until the last guest. By arrangement we can open from 12:00.</p>
+        <p>Daily from 14:00 until the last guest. Need it earlier? We will open for you. Want to stay till morning? We will stay with you.</p>
       </div>
       <div class="map-links">
         <a class="btn" href="https://2gis.kz/almaty/search/Cinematica%20%D1%83%D0%BB.%20%D0%A1%D1%83%D0%BB%D0%B5%D0%B9%D0%BC%D0%B5%D0%BD%D0%BE%D0%B2%D0%B0%2C%2024%D0%90" target="_blank" rel="noopener"><svg class="ic sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-6.5-6-6.5-11a6.5 6.5 0 0113 0c0 5-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg>Open in 2GIS</a>
@@ -482,6 +486,18 @@ footer { border-top: 1px solid var(--line); padding-block: 40px 100px; font-size
     </div>
   </div></section>
 
+
+  <section id="branch"><div class="wrap">
+    <div class="map-card branch glass">
+      <div class="map-text">
+        <span class="pill"><svg class="ic sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-6.5-6-6.5-11a6.5 6.5 0 0113 0c0 5-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg>Our second branch</span>
+        <h2>VIP Cinema</h2>
+        <p>Our other cinema: five rooms on two floors, neon lighting and a big screen. 267 Panfilov St, Almaty.</p>
+        <div class="cta"><a class="btn" href="https://vipcinemaalmaty.netlify.app/" target="_blank" rel="noopener">Visit the VIP Cinema website <svg class="ic sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+      </div>
+      <a class="branch-img" href="https://vipcinemaalmaty.netlify.app/" target="_blank" rel="noopener"><img src="img/v-hall3-bed.jpg" alt="VIP Cinema room" loading="lazy"></a>
+    </div>
+  </div></section>
   <section class="final"><div class="wrap">
     <div class="final-card glass"><h2>Ready for <span class="grad">movie night?</span></h2><p>Message us and we will find a free room for the time you need.</p><div class="cta center"><a class="btn" href="#book">Book now <svg class="ic sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn btn-ghost" href="https://t.me/cinematica_almaty_bot" target="_blank" rel="noopener"><svg class="ic sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 4L3 11.2l5.6 2.1L18 7.5l-7.2 7.3V20l3.3-3.5 4 2.9z"/></svg>Telegram bot</a></div></div>
   </div></section>
@@ -491,7 +507,7 @@ footer { border-top: 1px solid var(--line); padding-block: 40px 100px; font-size
   <div><a class="logo" href="#top"><img src="img/logo-cinematica.png" alt="" class="logo-img"><span>Cinematica</span></a><p class="muted">Private cinema rooms in Almaty.</p></div>
   <div><b>Address</b><p>24A Suleimenov St, Almaty</p><p class="muted">Daily from 14:00 until the last guest</p><p><a class="btn btn-sm btn-ghost route" href="https://2gis.kz/almaty/search/Cinematica%20%D1%83%D0%BB.%20%D0%A1%D1%83%D0%BB%D0%B5%D0%B9%D0%BC%D0%B5%D0%BD%D0%BE%D0%B2%D0%B0%2C%2024%D0%90" target="_blank" rel="noopener"><svg class="ic sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-6.5-6-6.5-11a6.5 6.5 0 0113 0c0 5-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg>Route in 2GIS</a></p></div>
   <div><b>Contact</b><p>WhatsApp: +7 708 008 88 08</p><p>Telegram: <a href="https://t.me/cinematica_almaty_bot" target="_blank" rel="noopener">@cinematica_almaty_bot</a></p><p>Instagram: <a href="https://instagram.com/cinematica_almaty" target="_blank" rel="noopener">@cinematica_almaty</a></p><p>TikTok: <a href="https://www.tiktok.com/@cinematica.almaty" target="_blank" rel="noopener">@cinematica.almaty</a></p></div>
-  <div><b>Our second branch</b><p>VIP Cinema, 267 Panfilov St</p><p><a href="https://instagram.com/vipcinema.almaty" target="_blank" rel="noopener">@vipcinema.almaty</a></p></div>
+  <div><b>Our second branch</b><p>VIP Cinema, 267 Panfilov St</p><p><a href="https://vipcinemaalmaty.netlify.app/" target="_blank" rel="noopener">VIP Cinema website</a></p><p><a href="https://instagram.com/vipcinema.almaty" target="_blank" rel="noopener">@vipcinema.almaty</a></p></div>
 </div>
 
 </footer>

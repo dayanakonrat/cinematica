@@ -247,6 +247,10 @@ footer { border-top: 1px solid var(--line); padding-block: 40px 100px; font-size
 @media (max-width: 480px) { .top .wordmark { display: none; } }
 .cta.center { justify-content: center; }
 .tg-btn { justify-self: start; margin-top: 4px; }
+.branch-img { display: block; border-radius: 20px; overflow: hidden; border: 1px solid var(--line); }
+.branch-img img { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; transition: transform .4s; }
+.branch-img:hover img { transform: scale(1.04); }
+details summary { line-height: 1.4; }
 
 
 </style>
@@ -271,7 +275,7 @@ footer { border-top: 1px solid var(--line); padding-block: 40px 100px; font-size
       <span class="pill"><svg class="ic sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-6.5-6-6.5-11a6.5 6.5 0 0113 0c0 5-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg>Жеке кинозал · Алматы</span>
       <h1>Бір кешке<br><span class="grad">өз кинозалыңыз</span></h1>
       <p class="lead">Бөгде адамдарсыз, жарнамасыз, асығыссыз. Тек сіз, кино және біз алдын ала дайындаған атмосфера.</p>
-      <div class="cta"><a class="btn" href="#book">WhatsApp арқылы брондау <svg class="ic sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn btn-ghost" href="#halls">Залдарды көру</a></div>
+      <div class="cta"><a class="btn" href="https://wa.me/77080088808?text=%D0%A1%D3%99%D0%BB%D0%B5%D0%BC%D0%B5%D1%82%D1%81%D1%96%D0%B7%20%D0%B1%D0%B5%2C%20Cinematica-%D0%B4%D0%B0%20%D0%BA%D0%B8%D0%BD%D0%BE%D0%B7%D0%B0%D0%BB%20%D0%B1%D1%80%D0%BE%D0%BD%D0%B4%D0%B0%D2%93%D1%8B%D0%BC%20%D0%BA%D0%B5%D0%BB%D0%B5%D0%B4%D1%96" target="_blank" rel="noopener">Кинозалды брондау <svg class="ic sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn btn-ghost" href="#halls">Залдарды көру</a></div>
       <div class="stats"><div><b>4</b><span>зал</span></div><div><b>Екеуге</b><span>және компанияға</span></div><div><b>4 500 ₸-ден</b><span>екеуге арналған пакет</span></div></div>
     </div>
     <div class="hero-visual">
@@ -433,7 +437,7 @@ footer { border-top: 1px solid var(--line); padding-block: 40px 100px; font-size
         <p>Зал мен уақытты таңдаңыз. Біз бағасын есептеп, әкімшіге хабарлама дайындаймыз. Тек «Жіберу» түймесін басыңыз.</p>
         <p class="small">Немесе тікелей жазыңыз: <b>+7 708 008 88 08</b></p>
         <a class="btn btn-ghost tg-btn" href="https://t.me/cinematica_almaty_bot" target="_blank" rel="noopener"><svg class="ic sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 4L3 11.2l5.6 2.1L18 7.5l-7.2 7.3V20l3.3-3.5 4 2.9z"/></svg>Telegram-бот арқылы жылдам брондау</a>
-        <p class="small">14:00-ден соңғы қонаққа дейін жұмыс істейміз. Келісім бойынша 12:00-ден ашыламыз.</p>
+        <p class="small">14:00-ден соңғы қонаққа дейін жұмыс істейміз. Ертерек керек болса, сіз үшін ашамыз.</p>
       </div>
       <form id="f" novalidate>
         <div class="row">
@@ -456,15 +460,15 @@ footer { border-top: 1px solid var(--line); padding-block: 40px 100px; font-size
 
   <section id="faq"><div class="wrap narrow">
     <div class="sec-head"><span class="pill">Сұрақтар</span><h2>Жиі қойылатын <span class="grad">сұрақтар</span></h2></div>
-    <details class="glass"><summary>Өз тағамымыз бен сусынымызды әкелуге бола ма?</summary><p>Иә, кез келген тағам мен сусынды өзіңізбен әкелуге болады. Немесе жеткізуді тікелей залға тапсырыс беріңіз: бұл үшін комиссия жоқ.</p></details>
-    <details class="glass"><summary>Қандай фильмдер көруге болады?</summary><p>Интернетте бар нәрсенің бәрі: жарнамасыз, жақсы сападағы фильмдер мен сериалдар, жаңа фильмдер шыққан бойда. Өз сілтемеңіз бойынша видео қосуға да болады.</p></details>
-    <details class="glass"><summary>Сеансты ұзартуға бола ма?</summary><p>Иә, әр қосымша сағат бір адамға 1 250 ₸ тұрады.</p></details>
-    <details class="glass"><summary>Кальян тартуға бола ма?</summary><p>Иә, бізде кальян бар. Бағасы 6 000 ₸-ден.</p></details>
-    <details class="glass"><summary>PlayStation немесе караоке бар ма?</summary><p>Жоқ, бізде тек кино: үлкен экран және жақсы дыбыс.</p></details>
-    <details class="glass"><summary>Қалай төлеуге болады?</summary><p>Қолма-қол, Kaspi аударымы немесе Kaspi Red арқылы. Брондау кезіндегі алдын ала төлем Kaspi арқылы.</p></details>
-    <details class="glass"><summary>Сағат нешеде жұмыс істейсіздер?</summary><p>14:00-ден брондау бойынша соңғы қонаққа дейін. Қажет болса, ертерек, 12:00-ден ашыла аламыз: әкімшімен алдын ала келісіңіз.</p></details>
-    <details class="glass"><summary>Брондауды қалай болдырмауға немесе ауыстыруға болады?</summary><p>24 сағат бұрын ескертсеңіз, тегін. Кейінірек алдын ала төлем қайтарылмайды, бірақ бір рет ауыстыруға болады.</p></details>
-    <details class="glass"><summary>Жас шектеуі бар ма?</summary><p>21:00-ге дейін 16 жастан, 21:00-ден кейін тек 18 жастан.</p></details>
+    <details class="glass"><summary>🍿 Өз тағамымыз бен сусынымызды әкелуге бола ма?</summary><p>Әрине! Сүйікті тағамдарыңызды ала келіңіз немесе жеткізуді тікелей залға тапсырыс беріңіз. Бұл үшін ешқандай қосымша төлем жоқ 😉</p></details>
+    <details class="glass"><summary>🎬 Не көруге болады?</summary><p>Интернетте бар нәрсенің бәрі: жарнамасыз, жақсы сападағы фильмдер мен сериалдар, жаңа фильмдер шыққан бойда. Өз видеоңызды көргіңіз келе ме? Сілтемесін жіберіңіз ✨</p></details>
+    <details class="glass"><summary>⏳ Сеансты ұзартуға бола ма?</summary><p>Иә, кеткіңіз келмесе, қала беріңіз 💛 Әр қосымша сағат бір адамға 1 250 ₸ тұрады.</p></details>
+    <details class="glass"><summary>💨 Кальян тартуға бола ма?</summary><p>Иә, сізге хош иісті кальян дайындаймыз. Бағасы 6 000 ₸-ден.</p></details>
+    <details class="glass"><summary>🎮 PlayStation немесе караоке бар ма?</summary><p>Жоқ, бізде бәрі кино үшін: үлкен экран, жақсы дыбыс және жайлы диван 🎥</p></details>
+    <details class="glass"><summary>💳 Қалай төлеуге болады?</summary><p>Өзіңізге ыңғайлы тәсілмен: қолма-қол, Kaspi, Freedom немесе Halyk картасына аударым, Kaspi QR немесе Kaspi Red. Брондау кезіндегі алдын ала төлемді Kaspi-ге аударуға болады.</p></details>
+    <details class="glass"><summary>🕑 Сағат нешеге дейін жұмыс істейсіздер?</summary><p>14:00-де ашылып, соңғы қонақ кеткенде жабыламыз. Ертерек керек пе? Сіз үшін ашамыз ☀️ Таңға дейін қалғыңыз келе ме? Сізбен бірге қаламыз 🌙</p></details>
+    <details class="glass"><summary>🔒 Залдарда камера бар ма?</summary><p>Жоқ, залдарда камера жоқ. Сеанс кезінде есік жабылады, сізді ешкім мазаламайды 🤫</p></details>
+    <details class="glass"><summary>🔞 Жас шектеуі бар ма?</summary><p>21:00-ге дейін 16 жастан бастап, 21:00-ден кейін тек 18 жастан бастап күтеміз.</p></details>
   </div></section>
 
   <section id="map"><div class="wrap">
@@ -472,7 +476,7 @@ footer { border-top: 1px solid var(--line); padding-block: 40px 100px; font-size
       <div class="map-text">
         <span class="pill"><svg class="ic sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-6.5-6-6.5-11a6.5 6.5 0 0113 0c0 5-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg>Бізді қалай табуға болады</span>
         <h2>Сүлейменов к-сі, 24А<br><span class="grad">Алматы</span></h2>
-        <p>Күн сайын 14:00-ден соңғы қонаққа дейін. Келісім бойынша 12:00-ден ашыламыз.</p>
+        <p>Күн сайын 14:00-ден соңғы қонаққа дейін. Ертерек керек пе? Сіз үшін ашамыз. Таңға дейін қалғыңыз келе ме? Сізбен бірге қаламыз.</p>
       </div>
       <div class="map-links">
         <a class="btn" href="https://2gis.kz/almaty/search/Cinematica%20%D1%83%D0%BB.%20%D0%A1%D1%83%D0%BB%D0%B5%D0%B9%D0%BC%D0%B5%D0%BD%D0%BE%D0%B2%D0%B0%2C%2024%D0%90" target="_blank" rel="noopener"><svg class="ic sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-6.5-6-6.5-11a6.5 6.5 0 0113 0c0 5-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg>2GIS-те ашу</a>
@@ -482,6 +486,18 @@ footer { border-top: 1px solid var(--line); padding-block: 40px 100px; font-size
     </div>
   </div></section>
 
+
+  <section id="branch"><div class="wrap">
+    <div class="map-card branch glass">
+      <div class="map-text">
+        <span class="pill"><svg class="ic sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-6.5-6-6.5-11a6.5 6.5 0 0113 0c0 5-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg>Біздің екінші филиал</span>
+        <h2>VIP Cinema</h2>
+        <p>Біздің тағы бір кинотеатрымыз: екі қабаттағы бес зал, неон жарығы және үлкен экран. Панфилов к-сі, 267, Алматы.</p>
+        <div class="cta"><a class="btn" href="https://vipcinemaalmaty.netlify.app/" target="_blank" rel="noopener">VIP Cinema сайтына өту <svg class="ic sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+      </div>
+      <a class="branch-img" href="https://vipcinemaalmaty.netlify.app/" target="_blank" rel="noopener"><img src="img/v-hall3-bed.jpg" alt="VIP Cinema залы" loading="lazy"></a>
+    </div>
+  </div></section>
   <section class="final"><div class="wrap">
     <div class="final-card glass"><h2>Сеансқа <span class="grad">дайынсыз ба?</span></h2><p>Бізге жазыңыз, қажетті уақытқа бос зал табамыз.</p><div class="cta center"><a class="btn" href="#book">Брондау <svg class="ic sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn btn-ghost" href="https://t.me/cinematica_almaty_bot" target="_blank" rel="noopener"><svg class="ic sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 4L3 11.2l5.6 2.1L18 7.5l-7.2 7.3V20l3.3-3.5 4 2.9z"/></svg>Telegram-бот</a></div></div>
   </div></section>
@@ -491,7 +507,7 @@ footer { border-top: 1px solid var(--line); padding-block: 40px 100px; font-size
   <div><a class="logo" href="#top"><img src="img/logo-cinematica.png" alt="" class="logo-img"><span>Cinematica</span></a><p class="muted">Алматыдағы жеке кинозалдар.</p></div>
   <div><b>Мекенжай</b><p>Сүлейменов к-сі, 24А, Алматы</p><p class="muted">Күн сайын 14:00-ден соңғы қонаққа дейін</p><p><a class="btn btn-sm btn-ghost route" href="https://2gis.kz/almaty/search/Cinematica%20%D1%83%D0%BB.%20%D0%A1%D1%83%D0%BB%D0%B5%D0%B9%D0%BC%D0%B5%D0%BD%D0%BE%D0%B2%D0%B0%2C%2024%D0%90" target="_blank" rel="noopener"><svg class="ic sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-6.5-6-6.5-11a6.5 6.5 0 0113 0c0 5-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg>2GIS-те бағыт</a></p></div>
   <div><b>Байланыс</b><p>WhatsApp: +7 708 008 88 08</p><p>Telegram: <a href="https://t.me/cinematica_almaty_bot" target="_blank" rel="noopener">@cinematica_almaty_bot</a></p><p>Instagram: <a href="https://instagram.com/cinematica_almaty" target="_blank" rel="noopener">@cinematica_almaty</a></p><p>TikTok: <a href="https://www.tiktok.com/@cinematica.almaty" target="_blank" rel="noopener">@cinematica.almaty</a></p></div>
-  <div><b>Екінші филиал</b><p>VIP Cinema, Панфилов к-сі, 267</p><p><a href="https://instagram.com/vipcinema.almaty" target="_blank" rel="noopener">@vipcinema.almaty</a></p></div>
+  <div><b>Екінші филиал</b><p>VIP Cinema, Панфилов к-сі, 267</p><p><a href="https://vipcinemaalmaty.netlify.app/" target="_blank" rel="noopener">VIP Cinema сайты</a></p><p><a href="https://instagram.com/vipcinema.almaty" target="_blank" rel="noopener">@vipcinema.almaty</a></p></div>
 </div>
 
 </footer>
