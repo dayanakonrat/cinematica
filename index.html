@@ -213,7 +213,7 @@ footer { border-top: 1px solid var(--line); padding-block: 40px 100px; font-size
 .hero-wordmark { width: min(100%, 440px); height: auto; display: block; filter: drop-shadow(0 0 24px color-mix(in srgb, var(--a2) 45%, transparent)); }
 
 /* Сеты */
-.sets { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; }
+.sets { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 18px; }
 @media (max-width: 1000px) { .sets { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 600px) { .sets { grid-template-columns: 1fr; } }
 .set { border-radius: 20px; padding: 22px; display: flex; flex-direction: column; gap: 10px; }
@@ -224,8 +224,7 @@ footer { border-top: 1px solid var(--line); padding-block: 40px 100px; font-size
 .set-items { list-style: none; margin: 4px 0 8px; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; flex: 1; align-content: flex-start; }
 .set-items li { font-size: 13px; padding: 5px 10px; border-radius: 999px; background: var(--glass-hi); }
 .set .btn { align-self: flex-start; }
-.perks { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; margin-top: 18px; }
-@media (max-width: 1000px) { .perks { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.perks { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 18px; margin-top: 18px; }
 @media (max-width: 600px) { .perks { grid-template-columns: 1fr; } }
 .perk { border-radius: 20px; padding: 22px; display: grid; gap: 8px; align-content: start; }
 .perk p { color: var(--muted); font-size: 14px; }
@@ -252,6 +251,10 @@ footer { border-top: 1px solid var(--line); padding-block: 40px 100px; font-size
 .branch-img img { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; transition: transform .4s; }
 .branch-img:hover img { transform: scale(1.04); }
 details summary { line-height: 1.4; }
+
+.set-hit { border: 1px solid transparent; background: linear-gradient(var(--bg), var(--bg)) padding-box, var(--grad) border-box; box-shadow: 0 30px 60px -30px var(--a2); }
+.set-hours b { color: var(--fg); font-weight: 700; white-space: nowrap; }
+@media (max-width: 860px) { .perks { grid-template-columns: 1fr; } }
 
 
 </style>
@@ -361,42 +364,43 @@ details summary { line-height: 1.4; }
   <section id="sets"><div class="wrap">
     <div class="sec-head"><span class="pill">Сеты</span><h2>Кино и всё <span class="grad">к нему</span></h2><p>Время в зале, закуски и напитки одной ценой.</p></div>
     <div class="sets">
+      <article class="set glass set-hit">
+        <div class="set-top"><span class="set-num">01</span><span class="price">4 500 ₸</span></div>
+        <h3>Prime Time</h3>
+        <p class="set-hours">2 часа приватного кино <b>до 18:00</b></p>
+        <ul class="set-items"><li>Попкорн</li></ul>
+        <a class="btn btn-sm" href="#book" data-pack="Prime Time">Выбрать сет</a>
+      </article>
       <article class="set glass">
-        <div class="set-top"><span class="set-num">01</span><span class="price">6 990 ₸</span></div>
-        <h3>Easy</h3>
+        <div class="set-top"><span class="set-num">02</span><span class="price">6 990 ₸</span></div>
+        <h3>Just Chill</h3>
         <p class="set-hours">2 часа приватного кино</p>
-        <ul class="set-items"><li>Попкорн</li><li>2 напитка на выбор</li></ul>
-        <a class="btn btn-sm btn-ghost" href="#book" data-pack="Easy">Выбрать сет</a>
+        <ul class="set-items"><li>Попкорн</li><li>2 напитка 0,5</li></ul>
+        <a class="btn btn-sm btn-ghost" href="#book" data-pack="Just Chill">Выбрать сет</a>
       </article>
       <article class="set glass">
-        <div class="set-top"><span class="set-num">02</span><span class="price">9 990 ₸</span></div>
-        <h3>Chill</h3>
+        <div class="set-top"><span class="set-num">03</span><span class="price">9 990 ₸</span></div>
+        <h3>Good Vibes</h3>
         <p class="set-hours">3 часа приватного кино</p>
-        <ul class="set-items"><li>Чипсы Lay&#x27;s</li><li>1 натуральный сок на выбор</li></ul>
-        <a class="btn btn-sm btn-ghost" href="#book" data-pack="Chill">Выбрать сет</a>
+        <ul class="set-items"><li>Попкорн</li><li>2 напитка 0,5</li></ul>
+        <a class="btn btn-sm btn-ghost" href="#book" data-pack="Good Vibes">Выбрать сет</a>
       </article>
       <article class="set glass">
-        <div class="set-top"><span class="set-num">03</span><span class="price">14 990 ₸</span></div>
+        <div class="set-top"><span class="set-num">04</span><span class="price">14 990 ₸</span></div>
         <h3>Long Night</h3>
         <p class="set-hours">5 часов приватного кино</p>
-        <ul class="set-items"><li>Попкорн</li><li>1 натуральный сок на выбор</li></ul>
+        <ul class="set-items"><li>Попкорн</li><li>2 напитка 0,5</li></ul>
         <a class="btn btn-sm btn-ghost" href="#book" data-pack="Long Night">Выбрать сет</a>
       </article>
       <article class="set glass">
-        <div class="set-top"><span class="set-num">04</span><span class="price">17 990 ₸</span></div>
-        <h3>Smoke &amp; Chill</h3>
+        <div class="set-top"><span class="set-num">05</span><span class="price">17 990 ₸</span></div>
+        <h3>Smoky Vibes</h3>
         <p class="set-hours">3 часа приватного кино</p>
-        <ul class="set-items"><li>Кальян</li><li>Попкорн</li><li>2 напитка на выбор</li><li>Чай со сладостями</li></ul>
-        <a class="btn btn-sm btn-ghost" href="#book" data-pack="Smoke &amp; Chill">Выбрать сет</a>
+        <ul class="set-items"><li>Дымный коктейль</li><li>Попкорн</li><li>2 напитка 0,5</li><li>Чай</li></ul>
+        <a class="btn btn-sm btn-ghost" href="#book" data-pack="Smoky Vibes">Выбрать сет</a>
       </article>
     </div>
     <div class="perks">
-      <article class="perk perk-main glass">
-        <span class="perk-tag">Специальный сет · до 18:00</span>
-        <h3>До шести <span class="grad">4 500 ₸</span></h3>
-        <p>2 часа приватного кино на двоих до 18:00 и попкорн в подарок.</p>
-        <a class="btn btn-sm" href="#book" data-pack="До шести">Выбрать</a>
-      </article>
       <article class="perk perk-main glass">
         <span class="perk-tag">Акция · до 17:00</span>
         <h3>2 + 1 <span class="grad">час в подарок</span></h3>
@@ -406,7 +410,7 @@ details summary { line-height: 1.4; }
       <article class="perk glass"><span class="perk-big grad">−20%</span><h3>В день рождения</h3><p>Скидка 20% имениннику в день рождения.</p></article>
       <article class="perk glass"><span class="perk-big grad">Попкорн</span><h3>В подарок</h3><p>При заказе любого романтического оформления.</p></article>
     </div>
-    <p class="swap">Попкорн можно заменить на чипсы, а 2 напитка на выбор на 1 натуральный сок.</p>
+    <p class="swap">Попкорн можно заменить на чипсы Lay's из печи, а 2 напитка 0,5 на 1 натуральный сок.</p>
   </div></section>
   <section id="gallery"><div class="wrap">
     <div class="sec-head"><span class="pill">Фото</span><h2>Как это <span class="grad">выглядит</span></h2></div>
@@ -437,7 +441,7 @@ details summary { line-height: 1.4; }
           <label for="room">Зал<select id="room"></select></label>
           <label for="guests">Гостей<input id="guests" type="number" min="1" max="7" value="2"></label>
         </div>
-        <label for="pack">Пакет или сет<select id="pack"><option value="">Без пакета и сета, обычная аренда</option><optgroup label="Романтические пакеты"><option value="Romantic Base">Romantic Base · 2 ч · 10 000 ₸</option><option value="Romantic Classic">Romantic Classic · 3 ч · 20 000 ₸</option><option value="Romantic Premium">Romantic Premium · 4 ч · 25 000 ₸</option></optgroup><optgroup label="Сеты"><option value="Easy">Easy · 2 ч · 6 990 ₸</option><option value="Chill">Chill · 3 ч · 9 990 ₸</option><option value="Long Night">Long Night · 5 ч · 14 990 ₸</option><option value="Smoke & Chill">Smoke & Chill · 3 ч · 17 990 ₸</option><option value="До шести">До шести · 2 ч · 4 500 ₸</option></optgroup></select></label>
+        <label for="pack">Пакет или сет<select id="pack"><option value="">Без пакета и сета, обычная аренда</option><optgroup label="Романтические пакеты"><option value="Romantic Base">Romantic Base · 2 ч · 10 000 ₸</option><option value="Romantic Classic">Romantic Classic · 3 ч · 20 000 ₸</option><option value="Romantic Premium">Romantic Premium · 4 ч · 25 000 ₸</option></optgroup><optgroup label="Сеты"><option value="Prime Time">Prime Time · 2 ч · 4 500 ₸</option><option value="Just Chill">Just Chill · 2 ч · 6 990 ₸</option><option value="Good Vibes">Good Vibes · 3 ч · 9 990 ₸</option><option value="Long Night">Long Night · 5 ч · 14 990 ₸</option><option value="Smoky Vibes">Smoky Vibes · 3 ч · 17 990 ₸</option></optgroup></select></label>
         <div class="row3">
           <label for="date">Дата<input id="date" type="date"></label>
           <label for="time">Начало<input id="time" type="time" value="20:00" step="1800"></label>
@@ -508,7 +512,7 @@ details summary { line-height: 1.4; }
 <a class="btn fab" href="#book"><svg class="ic sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 11.5a8.5 8.5 0 01-12.4 7.6L3.5 20.5l1.4-4.4A8.5 8.5 0 1120.5 11.5z"/></svg>WhatsApp</a>
 
 <script>
-const D = {"wa": "77080088808", "name": "Cinematica", "pp": 2500, "rooms": [["Кинозал 1", 2500, 7], ["Кинозал 2", 2500, 2], ["Кинозал 3", 2500, 2], ["Кинозал 4", 2500, 2]], "packs": {"Romantic Base": [10000, 2], "Romantic Classic": [20000, 3], "Romantic Premium": [25000, 4], "Easy": [6990, 2], "Chill": [9990, 3], "Long Night": [14990, 5], "Smoke & Chill": [17990, 3], "До шести": [4500, 2]}};
+const D = {"wa": "77080088808", "name": "Cinematica", "pp": 2500, "rooms": [["Кинозал 1", 2500, 7], ["Кинозал 2", 2500, 2], ["Кинозал 3", 2500, 2], ["Кинозал 4", 2500, 2]], "packs": {"Romantic Base": [10000, 2], "Romantic Classic": [20000, 3], "Romantic Premium": [25000, 4], "Prime Time": [4500, 2], "Just Chill": [6990, 2], "Good Vibes": [9990, 3], "Long Night": [14990, 5], "Smoky Vibes": [17990, 3]}};
 const $ = id => document.getElementById(id);
 const fmt = n => n.toLocaleString("ru-RU").replace(/\u00a0/g, " ") + " ₸";
 $("room").innerHTML = D.rooms.map(([n, p, c]) => `<option value="${n}">${n}</option>`).join("");
